@@ -1,0 +1,9 @@
+services:
+  start-script:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    env_file:
+      - .env
+
+# change token at .env and run docker compose up
